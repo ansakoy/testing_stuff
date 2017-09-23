@@ -1,0 +1,23 @@
+# coding: utf-8
+import pandas
+df1 = pandas.DataFrame([[2, 4, 6],[10,  20, 30]])
+df1
+df1 = pandas.DataFrame([[2, 4, 6],[10,  20, 30]], columns=['Price', 'Age', 'Value'])
+df1
+df1 = pandas.DataFrame([[2, 4, 6],[10,  20, 30]], columns=['Price', 'Age', 'Value'], index=['First', 'Second'])
+df1
+df2 = pandas.DataFrame([{'Name': 'John'}, {'Name': 'Jane'}])
+df2
+df2 = pandas.DataFrame([{'Name': 'John', 'Surname': 'Doe'}, {'Name': 'Jane'}])
+df2
+type(df1)
+# dir(df1) - what methods I can apply to it
+df1.mean()
+df1.mean().mean()
+type(df1.mean())
+df1.Price
+type(df1.Price)
+df1.Price.mean()
+df1.Price.max()
+%save -r pandas_intro_session
+%save -r pandas_intro_session 1-999
